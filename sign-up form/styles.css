@@ -1,0 +1,187 @@
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .signup-container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        .signup-title {
+            font-size: 48px;
+            font-weight: normal;
+            margin-bottom: 40px;
+            color: #ffffff;
+        }
+
+        .form-group {
+            margin-bottom: 30px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 16px;
+            color: #ffffff;
+            margin-bottom: 8px;
+            font-weight: normal;
+        }
+
+        .form-input {
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #ffffff;
+            color: #ffffff;
+            font-size: 16px;
+            padding: 8px 0;
+            outline: none;
+        }
+
+        .form-input::placeholder {
+            color: #888888;
+        }
+
+        .form-input:focus {
+            border-bottom: 2px solid #ffffff;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .radio-option input[type="radio"] {
+            width: 16px;
+            height: 16px;
+            border: 1px solid #ffffff;
+            border-radius: 50%;
+            background: transparent;
+            appearance: none;
+            cursor: pointer;
+        }
+
+        .radio-option input[type="radio"]:checked {
+            background: #ffffff;
+            border: 3px solid #0a0a0a;
+            box-shadow: 0 0 0 1px #ffffff;
+        }
+
+        .radio-option label {
+            font-size: 16px;
+            color: #ffffff;
+            cursor: pointer;
+            font-weight: normal;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            border: 1px solid #ffffff;
+            background: transparent;
+            appearance: none;
+            cursor: pointer;
+            margin-top: 2px;
+        }
+
+        .checkbox-group input[type="checkbox"]:checked {
+            background: #ffffff;
+            position: relative;
+        }
+
+        .checkbox-group input[type="checkbox"]:checked::after {
+            content: '✓';
+            position: absolute;
+            top: -2px;
+            left: 2px;
+            color: #0a0a0a;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .checkbox-group label {
+            font-size: 16px;
+            color: #ffffff;
+            cursor: pointer;
+            font-weight: normal;
+            line-height: 1.4;
+        }
+
+        .signup-btn {
+            background: #ffffff;
+            color: #0a0a0a;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: normal;
+            cursor: pointer;
+            border-radius: 0;
+        }
+
+        .signup-btn:hover {
+            background: #f0f0f0;
+        }
+
+        .signup-btn:active {
+            background: #e0e0e0;
+        }
+
+        /* Date input styling */
+        .form-input[type="date"] {
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+            cursor: pointer;
+        }
+
+        .form-input[type="date"]::-webkit-inner-spin-button,
+        .form-input[type="date"]::-webkit-clear-button {
+            filter: invert(1);
+        }
+
+        /* Password input styling */
+        .form-input[type="password"] {
+            letter-spacing: 0.1em;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .signup-container {
+                padding: 20px;
+            }
+            
+            .signup-title {
+                font-size: 36px;
+            }
+            
+            .radio-group {
+                gap: 20px;
+            }
+        }
